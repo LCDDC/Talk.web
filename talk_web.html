@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk.web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <script src="talk_web.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <br>
+    <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+    <center>
+        <h1 class="header">
+            Talk.web
+            <sup>
+                <img src="1.png">
+            </sup>
+        </h1>
+        <h3 id="user_name" class="color_white"></h3>
+        <div class="form-group input_div_room_page">
+            <label id="lab1">
+                #add my
+                <sup>
+                    room
+                </sup>
+            </label>
+            <input type="text" id="room_name" class="form-control" placeholder="My room name">
+        </div>
+        <button class="button2" onclick="addRoom();" class="btn btn-success">Add room</button>
+        <h3 class="color_white">#Created rooms</h3>
+        <div id="output"></div>
+    </center>
+   </div>
+   <div class="copy_right_footer">
+    Desarollado por: LCDDC
+</div>
+<script src="main.js"></script>       
+</body>
+</html>
